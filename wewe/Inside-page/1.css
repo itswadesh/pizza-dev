@@ -1,0 +1,208 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root {
+  --red: #000000;
+
+}
+* {
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 50%;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3 {
+  color: rgba(255, 255, 255, 0.979);
+}
+
+h1 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+#total {
+  text-align: right;
+  margin-right: 1.5rem;
+  
+}
+
+#d {
+  text-align: right;
+  margin-right: 1.5rem;
+  
+}
+
+#discount {
+  text-align: right;
+  margin-right: 1.5rem;
+  
+}
+
+/* Image Styles */
+figure.zoom {
+  background-position: 50% 50%;
+  position: relative;
+  width: 600px;
+  height: 2100px;
+  overflow: hidden;
+  cursor: zoom-in;
+  float: left;
+}
+
+figure.zoom img:hover {
+  opacity: 0;
+}
+
+figure.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+  height: 2100px;
+}
+
+.img1 {
+  width: 650px;
+  height: 1000px;
+  float: left;
+  padding-left: 20px;
+  
+}
+
+/* Hidden Radio Button Styles */
+.hiddenradio [type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Hidden Radio Button Image Styles */
+.hiddenradio [type="radio"] + img {
+  cursor: pointer;
+}
+
+/* Hidden Radio Button Checked Styles */
+.hiddenradio [type="radio"]:checked + img {
+  outline: 2px solid #f00;
+}
+
+/* Hidden Checkbox Styles */
+.hiddenradio [type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Hidden Checkbox Image Styles */
+.hiddenradio [type="checkbox"] + img {
+  cursor: pointer;
+}
+
+/* Hidden Checkbox Checked Styles */
+.hiddenradio [type="checkbox"]:checked + img {
+  outline: 2px solid #f00;
+}
+
+button {
+  display: inline-block;
+  /* padding: .3rem 1rem; */
+  padding-top: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.6rem;
+  border: .13rem solid red;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 1rem;
+  
+  font-family: "Sofia", sans-serif;
+  border-radius: .3rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: black;
+  transition: .3s linear;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+  left: 0;
+
+}
+
+button:hover {
+  color: #ff0000;
+}
+
+#qty {
+  margin-left: 27rem;
+  text-align: right;
+  margin-right: 0.7rem;
+}
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+
+.quantity-counter input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+#name,#email{
+  
+  width: 14rem;
+  padding: 1rem;
+}
+#phoneNumber{
+  
+  width: 14rem;
+  padding: 1rem;
+}
+#address{
+  width: 14rem;
+  padding: 1rem;
+  
+  
+}
+ #orderForm{
+  color: white;
+  float: center;
+  margin-bottom: 0rem;
+  padding: 2rem;
+  
+ }
+
+
+#orderConfirmation{
+  color: white;
+  align-content: center;
+  margin: 2rem;
+  
+  
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Details</title>
+</head>
+<body>
+  <h1>Order Details</h1>
+  
+  <div id="orderConfirmation"></div>
+  
+  <script>
+    // Retrieve query parameters
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get("name");
+    var email = params.get("email");
+    var phoneNumber = params.get("phoneNumber");
+    // Retrieve other order details from query parameters
+
+    // Create the order details HTML
+    var orderDetails = "<p>Name: " + name + "</p>" +
+      "<p>Email: " + email + "</p>" +
+      "<p>Phone Number: " + phoneNumber + "</p>";
+    // Create the rest of the order details HTML
+
+    // Display the order details
+    var orderConfirmation = document.getElementById("orderConfirmation");
+    orderConfirmation.innerHTML = orderDetails;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="1.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+</head>
+
+<body>
+  <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(pizza-infographic22.jpg)">
+    <img src="pizza-infographic22.jpg" />
+  </figure>
+  <div class="hiddenradio">
+    <h1>Create Your Own</h1><br>
+    <h3>1. Select Your Size:</h3>
+    <label>
+      <input type="radio" name="size" value="20" onclick="updateTotal()">
+      <img src="./images/SIZE/Small.jpg" style="width: 140px;">
+    </label>
+    <label>
+      <input type="radio" name="size" value="40" onclick="updateTotal()">
+      <img src="./images/SIZE/Medium.png" style="width: 140px;">
+    </label>
+    <label>
+      <input type="radio" name="size" value="80" onclick="updateTotal()">
+      <img src="./images/SIZE/Large.jpg" style="width: 140px;">
+    </label>
+
+    <br><br>
+
+    <h3>2. Select Your Crust:</h3>
+    <label>
+      <input type="radio" name="crust" value="20" onclick="updateTotal()">
+      <img src="./images/CRUST/TNCRT.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="crust" value="30" onclick="updateTotal()">
+      <img src="./images/CRUST/DEPAN.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="crust" value="50" onclick="updateTotal()">
+      <img src="./images/CRUST/FILCRT.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="crust" value="40" onclick="updateTotal()">
+      <img src="./images/CRUST/CRYOTR.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="crust" value="50" onclick="updateTotal()">
+      <img src="./images/CRUST/THKCHW.png" style="width: 100px;height: 150px;">
+    </label>
+
+    <br><br>
+
+    <h3>3. Select Your Sauce:</h3>
+    <label>
+      <input type="radio" name="sauce" value="0" onclick="updateTotal()">
+      <img src="./images/SAUCE/NOSC.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="sauce" value="30" onclick="updateTotal()">
+      <img src="./images/SAUCE/BBSC.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="sauce" value="20" onclick="updateTotal()">
+      <img src="./images/SAUCE/TBSC.png" style="width: 120px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="sauce" value="30" onclick="updateTotal()">
+      <img src="./images/SAUCE/ALSC.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="sauce" value="30" onclick="updateTotal()">
+      <img src="./images/SAUCE/PSSC.png" style="width: 100px; height: 150px;">
+    </label>
+
+    <br><br>
+
+    <h3>4. Select Your Cheese:</h3>
+    <label>
+      <input type="radio" name="cheese" value="0" onclick="updateTotal()">
+      <img src="./images/CHEESE/NOCH.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="cheese" value="40" onclick="updateTotal()">
+      <img src="./images/CHEESE/MOZL.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="cheese" value="50" onclick="updateTotal()">
+      <img src="./images/CHEESE/PRAN.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="cheese" value="30" onclick="updateTotal()">
+      <img src="./images/CHEESE/FETA.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="radio" name="cheese" value="60" onclick="updateTotal()">
+      <img src="./images/CHEESE/FONA.png" style="width: 100px;height: 150px;">
+    </label>
+
+    <br><br>
+
+    <h3>5. Select Your Toppings:</h3>
+    <label>
+      <input type="checkbox" name="toppings" value="30" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/MSHRM.png" style="width: 100px; height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="30" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/PNER.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="20" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/ONIN.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="20" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/TOMO.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="30" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/SWRN.png" style="width: 100px;height: 150px;">
+    </label>
+    <br><br>
+    <label>
+      <input type="checkbox" name="toppings" value="30" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/CPSM.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="20" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/BLES.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="50" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/CHKA.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="40" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/SEAB.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp; &nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="40" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/MELL.png" style="width: 100px;height: 150px;">
+    </label>
+    <br><br>
+    <label>
+      <input type="checkbox" name="toppings" value="30" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/SHMP.png" style="width: 100px;height: 150px;">
+    </label>
+    &nbsp;&nbsp;
+    <label>
+      <input type="checkbox" name="toppings" value="20" onclick="updateTotal()">
+      <img src="./images/TOPPINGS/EXCH.png" style="width: 100px;height: 150px;">
+    </label>
+    <br><br>
+  </div>
+  <div class="img1">
+    <img src="./images/cold-drinks.jpg" alt="" style="width: 590px; height: 450px;" >
+  </div>
+
+  <br><br>
+
+  <div class="quantity-counter">
+    <h2 id="qty">Quantity:</h2>
+    <input type="number" id="quantity" min="1" value="1" onchange="updateTotal()">
+  </div>
+
+  <h1 id="total">Pizza Total: ₹0.00</h1>
+  <h2 id="discount">Discounted Price: ₹0.00 </h2>
+    <div id="orderForm" style="display: block;">
+      <h2>Enter Your Details</h2>
+      <label for="Name:"></label>
+      <input type="text" id="name" placeholder="Name">
+      <br><br>
+      <label for="Email:"></label>
+      <input type="email" id="email" placeholder="Email">
+      <br><br>
+      <label for="Phone Number:"></label>
+      <input type="tel" id="phoneNumber" placeholder="+91">
+      <br><br>
+      <label for="address"></label>
+      <textarea id="address" required placeholder="Address"></textarea>
+      <br><br>
+      
+      <button onclick="placeOrder()">Place Order</button>
+      
+  </div>
+  
+  <div id="orderConfirmation" style="display: none;">
+    
+  </div>
+  <button onclick="showOrderForm(); resetOrderForm()" >Reset Order</button>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Name:
+Email:
+Phone Number:
+
+Quantity: 1
+
+Size: (₹0.00) * 1 = ₹0.00
+Crust: (₹0.00) * 1 = ₹0.00
+Sauce: (₹0.00) * 1 = ₹0.00
+Cheese: (₹0.00) * 1 = ₹0.00
+Toppings: (₹0.00) * 1 = ₹0.00
+
+Pizza Total: ₹0.00 -->
